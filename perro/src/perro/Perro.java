@@ -59,7 +59,7 @@ public class Perro {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Perro Clifford = new Perro("Clifford", "Pitbull", 15, "Marron");
+        Perro Clifford = new Perro("Clifford", "Pitbull", 14, "Marron");
         Perro lulu = new Perro("Lulu", "Pincher", 2, "Negro");
         System.out.println(Clifford.toString());
         System.out.println("--------------------");
