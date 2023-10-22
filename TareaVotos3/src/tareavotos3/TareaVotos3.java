@@ -2,12 +2,11 @@ package tareavotos3;
 
 import java.util.Scanner;
 
-/* @author Miguel Ortiz */
-
  /*  indicar la estadistica de los estudiantes de poo, 
     edad promedio general, edad promedio de hombres, edad promedio de mujeres
     cuantas personas hay por cada estrato economico(1 al 6), donde despues de
     pedir los datos de un estudiante, preguntar si hay mas estudiantes        */
+
 public class TareaVotos3 {
 
     public static void main(String[] args) {
