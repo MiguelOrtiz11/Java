@@ -6,11 +6,11 @@ public class Password {
     
     //atributos
     private int longitud;
-    private String contraseña;
+    private final String contraseña;
     
     //constante
     private final static int LONG_DEF=8;
-    
+
     //constructores
     public Password(){
         this(LONG_DEF);
@@ -34,25 +34,25 @@ public class Password {
     }
     
     public String generaPassword(){
-        String password="";
+        StringBuilder password= new StringBuilder();
         for(int i=0;i<longitud;i++){
             //generamos un numerto aleatorio, segun este eslige 
             //si añadir una minuscula, mayuscula o numero 
             int eleccion=((int)Math.floor(Math.random()*3+1));
             if(eleccion==1){
                 char minusculas=(char)((int)Math.floor(Math.random()*(123-97)+97));
-                password+=minusculas;
+                password.append(minusculas);
             }else{
                 if(eleccion==2){
                     char mayusculas=(char)((int)Math.floor(Math.random()*(91-65)+65));
-                    password+=mayusculas;
+                    password.append(mayusculas);
                 }else{
                     char numeros=(char)((int)Math.floor(Math.random()*(58-48)+48));
-                    password+=numeros;
+                    password.append(numeros);
                 }
             }
         }
-        return password;
+        return password.toString();
     }
     
     public boolean esFuerte(){
@@ -71,11 +71,7 @@ public class Password {
                 }
             }
         }
-        if(cuentanumeros>=5 && cuentaminusculas>=1 && cuentamayusculas>=2){
-            return true;
-        }else{
-            return false;
-        }
+        return cuentanumeros >= 5 && cuentaminusculas >= 1 && cuentamayusculas >= 2;
     }
  
     
@@ -88,8 +84,8 @@ public class Password {
         int longitud=Integer.parseInt(texto);
         
         //creamos los arrays
-        Password listapassword[]=new Password[tamaño];
-        boolean fortalezaPassword[]=new boolean[tamaño];
+        Password[] listapassword =new Password[tamaño];
+        boolean[] fortalezaPassword =new boolean[tamaño];
         
         //creamos objetos,  indicamos si es fuerte y mostramos la contraseña y su fortaleza
         for(int i=0;i<listapassword.length;i++){
