@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class Casting {
+public class Casting {
+
+    public static void main(String[] args) {
+
+        int i;
+
+    }
 }
