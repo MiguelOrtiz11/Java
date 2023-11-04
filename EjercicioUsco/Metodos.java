@@ -79,14 +79,12 @@ public class Metodos {
     }
 
     public static void binario() {
-        Scanner Leer = new Scanner(System.in);
-        System.out.print("Ingrese un número entero: ");
-        int numero = Leer.nextInt();
-        String binario = Integer.toBinaryString(numero);
-        System.out.println("El número en binario es: " + binario);
+            Scanner Leer = new Scanner(System.in);
+            System.out.print("Ingrese un número entero: ");
+            int numero = Leer.nextInt();
+            
+
+            System.out.println("El número en binario es: " + binario);
     }
-    
-    
+
 }
-
-
