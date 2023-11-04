@@ -15,18 +15,18 @@ public class practica3 {
 
         int[] primos = new int[n];
 
-        for (int p = 0, candidato = 2; p < primos.length; candidato++) {
+        for (int p = 0, numeroPrimo = 2; p < primos.length; numeroPrimo++) {
             boolean esPrimo = true;
 
-            for (int i = 2; i <= Math.sqrt(candidato); i++) {
-                if (candidato % i == 0) {
+            for (int i = 2; i <= Math.sqrt(numeroPrimo); i++) {
+                if (numeroPrimo % i == 0) {
                     esPrimo = false;
                     break;
                 }
             }
 
             if (esPrimo) {
-                primos[p++] = candidato;
+                primos[p++] = numeroPrimo;
             }
         }
 
@@ -35,6 +35,5 @@ public class practica3 {
             System.out.println(primo);
         }
 
-        scanner.close();
     }
 }
