@@ -84,7 +84,7 @@ public class Metodos {
             int numero = Leer.nextInt();
             
 
-            System.out.println("El número en binario es: " + binario);
+            System.out.println("El número en binario es: ");
     }
 
 }
