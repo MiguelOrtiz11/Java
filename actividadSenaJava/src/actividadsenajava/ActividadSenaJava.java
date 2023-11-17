@@ -11,7 +11,7 @@ public class ActividadSenaJava {
      */
     public static void main(String[] args) {
 
-        double a = 2.37;
+        double a = 2.374;
         double b = 13.25;
         double c = 1.43;
         double d = 1.1;
