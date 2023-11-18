@@ -6,8 +6,9 @@
 package funciones1;
 
 /**
- *
+ * 
  * @author migue
+ *    @ y alex
  */
 public class Funciones1 {
     static int metodoEntero(){
